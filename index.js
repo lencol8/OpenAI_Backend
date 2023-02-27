@@ -10,6 +10,10 @@ require('./routes/middlewares/mongo')
 const app = express()
 const port = 3080
 
+app.get('/', (req, res) => {
+  res.send('Hello, world!')
+})
+
 app.use(morgan('dev'))
 app.use(cors())
 app.use((req, res, next) => {
