@@ -1,8 +1,0 @@
-build:
-  runtime: nodejs14.x
-run:
-  steps:
-    - run: npm ci
-    - run: npm run api
-      env:
-        PORT: 3080
