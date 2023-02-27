@@ -3,7 +3,6 @@ build:
 run:
   steps:
     - run: npm ci
-    - run: npm run api
+    - run: npm run apimac
       env:
-        NODE_ENV: 'dev'
         PORT: 3080
