@@ -8,10 +8,6 @@ const apiLimiter = rateLimit({
 
 let app = express.Router()
 
-app.get('/', (req, res) => {
-  res.send('Welcome to my API!')
-})
-
 const authJwt = require('./auth/authJwt')
 
 // Webhooks and things
