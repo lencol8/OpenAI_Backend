@@ -20,6 +20,7 @@ db.mongoose
   })
   .catch((err) => {
     console.error('Connection error', err)
+    process.exit()
   })
 
 function initial() {
